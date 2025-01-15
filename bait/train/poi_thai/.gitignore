@@ -1,0 +1,13 @@
+.venv
+.vscode
+__pycache__
+.idea
+*.ipynb
+.ipynb_checkpoints
+
+data*
+weights
+*.pt
+
+runs
+Data_POI_Thai

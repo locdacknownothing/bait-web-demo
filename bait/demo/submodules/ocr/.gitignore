@@ -1,0 +1,12 @@
+.DS_Store
+weights/
+
+.vscode
+__pycache__
+
+.idea
+in/
+out/
+
+.venv/
+test*

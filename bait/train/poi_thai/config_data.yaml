@@ -1,0 +1,9 @@
+train: /mnt/data/Data_POI_Thai/train
+val: /mnt/data/Data_POI_Thai/val
+test: /mnt/data/Data_POI_Thai/test
+
+# number of classes
+nc: 3
+
+# class names
+names: ['PA','POI','SN']

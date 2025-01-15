@@ -1,0 +1,8 @@
+path: /mnt/data/data/Data_Ve_Chu/Data_Ve_Chu  # dataset root dir
+train: train  # train images (relative to 'path')
+val: val   # val images (relative to 'path')
+test: test  # test images (optional)
+
+# class names (only class for text detection)
+names: 
+  0: text

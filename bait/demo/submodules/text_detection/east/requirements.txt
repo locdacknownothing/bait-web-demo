@@ -1,0 +1,10 @@
+black
+numpy
+pandas
+matplotlib
+shapely
+torch
+torchvision
+opencv-python
+pillow
+tqdm

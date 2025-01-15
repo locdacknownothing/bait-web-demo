@@ -1,0 +1,5 @@
+type: "apple" #option: apple -> output của model theo loại
+top-k: 3 # trả về k cate có xác suất cao nhất
+threshold: 3 # xác suất dưới 4 model sẽ trả ra unknow
+export: True # dùng để export kết quả thành file csv
+path_export: None # path để lưu csv khi export = True

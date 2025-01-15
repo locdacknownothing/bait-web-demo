@@ -1,0 +1,5 @@
+# Detector arguments
+weight_detect: "ts0107@192.168.1.41:/mnt/data/text_detection/v3.0.0/yolo11x_1612.pt" 
+img_size: 640 
+conf: 0.3 
+iou: 0.2 

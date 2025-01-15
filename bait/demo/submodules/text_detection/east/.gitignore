@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+
+data_*/
+
+checkpoint/
+detect/
+history/
+submit/
+
+*.pt
+*.pth
+*.zip

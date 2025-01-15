@@ -1,0 +1,21 @@
+.vscode
+.venv
+__pycache__/
+*.ipynb
+*.cache
+*.log
+
+# Data folders
+data*/
+in/
+out_*/
+test_*/
+
+# Weights and result files
+runs
+*.pt
+*.pth
+*.json
+*.pkl
+
+!result/*.*
