@@ -1,6 +1,7 @@
 from dataclasses import asdict
 import re
 import pandas as pd
+import torch
 
 from submodules.text_detection.detect import Detector
 from submodules.text_detection.utils_td.file import get_weights
@@ -21,12 +22,12 @@ from submodules.cate_suggestion.predict import Model_Cate
 
 # Building Information 
 text_detection_weights = "./weights/yolo11x_1612.pt"
-text_recognition_weights = "./weights/transformerocr_2911.pth"
+text_recognition_weights = "./weights/transformerocr_0701.pth"
 text_recognition_config = "./weights/config_transformer.yml"
-ner_model = "./models/model_2511"
-cate_model = "./models/checkpoint-1254600-231224"
-cate_label_list = "./models/dgm_label.json"
-cate_map_name = "./models/list_cate.txt"
+ner_model = "./weights/model_2511"
+cate_model = "./weights/checkpoint-1254600-231224"
+cate_label_list = "./weights/dgm_label.json"
+cate_map_name = "./weights/list_cate.txt"
 cate_config = "submodules/cate_suggestion/configs/default.yaml"
 
 # Traffic Sign
@@ -63,30 +64,36 @@ def ocr_sign_traffic(image) -> dict[str, str]:
 
 
 def ner(text: str) -> dict:
-    ner = NER(ner_model)
-    ner_results = ner(text)[0]
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    
+    try:
+        ner = NER(ner_model, device=device)
+        ner_results = ner(text)[0]
+        ner_dict = asdict(ner_results)
+    except RuntimeError:
+        ner_dict = {"name": [], "keyword": [], "address": []}
 
-    ner_dict = asdict(ner_results)
-    ner_dict["name"] = [] if not ner_dict["name"] else ner_dict["name"]
-    ner_dict["keyword"] = [] if not ner_dict["keyword"] else ner_dict["keyword"]
-    ner_dict["address"] = [] if not ner_dict["address"] else ner_dict["address"]
+    ner_dict["name"] = [] if not ner_dict.get("name") else ner_dict["name"]
+    ner_dict["keyword"] = [] if not ner_dict.get("keyword") else ner_dict["keyword"]
+    ner_dict["address"] = [] if not ner_dict.get("address") else ner_dict["address"]
 
     return ner_dict
 
 
 def cate(text: str) -> list:
-    cate = Model_Cate(
-        cate_model,
-        cate_label_list,
-        cate_map_name,
-        cate_config,
-    )
-    cate_results,prob= cate.predict(text)
-
-    d = {'Cate': cate_results , 'Probs': prob}
-    df = pd.DataFrame(data=d)
-    
-    return df
+    try:
+        cate = Model_Cate(
+            cate_model,
+            cate_label_list,
+            cate_map_name,
+            cate_config,
+        )
+        cate_results,prob= cate.predict(text)
+        d = {'Cate': cate_results , 'Probs': prob}
+        df = pd.DataFrame(data=d)
+        return df
+    except:
+        return None
 
 
 def get_address_number(address: str) -> str:

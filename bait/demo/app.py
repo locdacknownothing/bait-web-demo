@@ -25,6 +25,7 @@ from services.od_traffic_sign import (
 from services.upload import save_uploaded_image
 from services.text import get_poi_data, get_traffic_sign_data
 from services.geo import fetch_ip_info_to_cookies, get_current_address, get_coor_from_metadata_images
+from services.weights import download_weights
 from ui import centered_button, traffic_button
 
 
@@ -68,9 +69,6 @@ def trigger_selection(selected_id):
     st.session_state.selected_row_id = selected_id
 
 
-# Fetch at first for quick access
-#fetch_ip_info_to_cookies()
-
 init_session_state()
 
 st.logo(image="assets/logo.png", size="large")
@@ -82,7 +80,6 @@ output_dir = ".streamlit/static/tmp"
 
 if st.session_state.uploaded_file is None:
     uploaded_file = st.file_uploader("Upload an image")
-   
 
     if uploaded_file is not None:
         image_bytes = uploaded_file.getvalue()
@@ -108,6 +105,7 @@ else:
     if not st.session_state.analysis_triggered and not st.session_state.analysis_triggered_traffic_sign:
         if image_path is not None:
             st.image(image_path, caption="Uploaded Image")
+            download_weights()
             centered_button("Analyze Building Information", type="primary", on_click=trigger_analysis)
             traffic_button("Analyze Traffic Sign", type="primary", on_click=trigger_analysis_traffic_sign)
     
