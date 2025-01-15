@@ -1,3 +1,6 @@
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 from pathlib import Path
 import streamlit as st
 from helpers import (
