@@ -1,0 +1,166 @@
+102: Cấm đi ngược chiều
+103a: Cấm ô tô
+103b: Cấm ô tô rẽ phải
+103c: Cấm ô tô rẽ trái
+104: Cấm xe máy
+105: Cấm ô tô và moto
+106a: Cấm xe tải
+106b: Cấm xe tải trên x tấn
+107: Cấm ô tô khách và ô tô tải
+107a: Cấm ô tô khách
+108a: Cấm ô tô kéo mooc
+109: Cấm máy kéo
+110a: Cấm xe đạp
+111a: Cấm xe gắn máy
+111b: Cấm xe lam
+111d: Cấm xe xích lô
+112: Cấm người đi bộ
+113: Cấm xe người kéo đẩy
+114: Cấm xe súc vật kéo
+115: Hạn chế trọng lượng xe
+116: Hạn chế trọng lượng trên trục xe
+117: Hạn chế chiều cao
+120: Hạn chế chiều dài ô tô kéo mooc
+121: Cự ly tối thiểu giữa 2 xe
+122: Stop
+123a: Cấm rẽ trái
+123b: Cấm rẽ phái
+124a: Cấm quay xe
+124b: Cấm ô tô quay đầu
+124c: Cấm rẽ trái và quay đầu xe
+124d: Cấm rẽ phải và quay đầu xe
+125: Cấm vượt
+127: Tốc độ tối đa cho phép
+128: Cấm bóp còi
+130: Cấm dừng và đỗ xe
+131a: Cấm đỗ xe
+131b: Cấm đỗ xe ngày lẻ
+131c: Cấm đỗ xe ngày chẵn
+133: Hết cấm vượt
+134: Hết hạn chế tốc độ tối đa
+135: Hết tất cả các lệnh cấm
+137: Cấm đi thẳng và rẽ trái rẽ phải
+201a: Chỗ ngoặt vòng bên trái
+201b: Chỗ ngoặt vòng bên phải
+202a: Nhiều chỗ ngoặt nguy hiểm liên tiếp bên trái
+202b: Nhiều chỗ ngoặt nguy hiểm liên tiếp bên phải
+203a: Đường hẹp hai bên
+203b: Đường hẹp bên trái
+203c: Đường hẹp bên phải
+204: Đường hai chiều
+205a: Đường giao nhau ngã tư
+205b: Đường giao nhau bên phải
+205d: Đường giao nhau chữ T
+205e: Đường giao nhau chữ Y
+206: Giao vòng xuyến
+207a: Giao nhau với đường không ưu tiên chữ T
+207b: Giao nhau với đường không ưu tiên bên phải
+207c: Giao nhau với đường không ưu tiên bên trái
+207d: Giao nhau với đường không ưu tiên bên trái và bên phải
+207g: Giao nhau với đường không ưu tiên chéo phải
+208: Giao nhau với đường ưu tiên
+209: Giao nhau có tín hiệu đèn
+212: Cầu hẹp
+215: Vực sâu phía trước
+218: Cửa chui
+219: Dốc xuống nguy hiểm
+220: Dốc lên nguy hiểm
+221a: Đường lòi lõm
+221b: Đường có gồ giảm tốc
+224: Người đi bộ cắt ngang
+225: Trẻ em
+226: Người đi xe đạp cắt ngang
+227: Công trường
+228a: Đá lở bên phải
+233: Nguy hiểm khác
+235: Đường đôi
+236: Kết thúc đường đôi
+238: Đường cao tốc
+239a: Đường cấp điện phía trên
+239b: Chiều cao tĩnh không thực tế
+240: Đường hầm
+245a: Đi chậm
+245b: Đi chậm
+301a: Các xe chỉ được đi thẳng
+301c: Các xe chỉ được rẽ trái
+301d: Các xe chỉ được rẽ phải
+301e: Các xe chỉ được rẽ trái
+301f: Các xe chỉ được đi thẳng rẽ phải
+301g: Các xe chỉ được đi thẳng rẽ trái
+302a: Các xe phải đi vòng sang bên phải
+302b: Các xe phải đi vòng sang bên trái
+302c: Các xe phải đi vòng sang bên trái hoặc phải
+303: Nơi giao nhau theo vòng xuyến
+306: Tốc độ tối thiểu cho phép
+403a: Đường dành cho xe ô tô
+403f: Đường dành cho xe máy và xe đạp
+409: Chỗ quay xe
+411: Hướng dẫn đi trên mỗi làn đường của các phương tiện phải theo
+412a: Làn đường dành cho xe ô tô khách
+412b: Làn đường dành cho xe ô tô con
+412d: Làn đường dành cho xe máy
+412f: Làn đường dành cho xe ô tô
+412g: Làn đường dành cho xe máy và xe đạp
+412k: Làn đường dành cho xe ô tô con, xe khách, xe buýt và xe máy
+412l: Làn đường dành cho xe máy và xe ba bánh
+414a: Chỉ hướng đường
+414b: Chỉ hướng đường
+414c: Chỉ hướng đường
+414d: Chỉ hướng đường
+415a: Biển gộp làn đường theo phương tiện
+415b: Kết thúc làn đường theo phương tiện
+417: Hướng đường phải đi cho từng loại xe
+419a: Chỉ dẫn địa giới
+420: Bắt đầu khu đông dân cư
+421: Kết thúc khu đông dân cư
+423a: Vị trí người đi bộ sang ngang bên trái
+423b: Vị trí người đi bộ sang ngang bên phải
+423c: Điểm bắt đầu đường đi bộ
+424a: Cầu vượt qua đường danh cho người đi bộ bên trái
+424b: Cầu vượt qua đường danh cho người đi bộ bên phải
+424d: Hầm chui qua đường dành cho người đi bộ bên phải
+426: Trạm cấp cứu
+428: Trạm xăng
+431: Trạm dừng nghỉ
+434a: Bến xe buýt
+437: Đường cao tốc
+439: Tên cầu
+441a: Phía trước 500m có công trường thi công
+441b: Phía trước 100m có công trường thi công
+441c: Phía trước 50m có công trường thi công
+442: Chợ
+445g: Đoạn đường hay xảy ra tai nạn
+447a: Biển báo cầu vượt liên thông
+447b: Biển báo cầu vượt liên thông
+451b: Lỗi vào đường cao tốc
+452: Chỉ dẫn bắt đầu đường cao tốc
+453a: Kết thúc đường cao tốc
+453b: Kết thúc đường cao tốc
+453c: Hết đường cao tốc
+454: Khoảng cách đến lỗi ra phía trước
+455: Khoảng cách đến lối ra tiếp theo
+459a: Khu tham quan du lịch
+464a: Lối ra một chiều
+465: Địa điểm và khoảng cách
+466: Chỉ dẫn sơ đồ lỗi ra một chiều
+468b: Chướng ngại vật phía trước
+469: Tiêu phản quang chỉ hướng rẽ
+470: Số điện thoại khẩn cấp
+472a: Trạm thu phí
+472b: Trạm thu phí
+474: Lối ra đường cao tốc
+501: Phạm vi tác dụng của biển
+502: Khoảng cách đến các đối tượng báo hiệu
+505a: Loại xe
+505b: Loại xe hạn chế qua cầu
+508b: Biển thị thời gian
+509a: Thuyết minh biển chính
+dgm1: Cấm đổ rác
+dgm2: Cấm họp chợ
+dgm3: Slow down - đi chậm
+dgm4: Chỉ dẫn ETC trạm thu phí
+dgm5: Chỉ dẫn nút giao
+dgm6: Giới hạn tốc độ tối đa theo làn trên đường cao tốc
+dgm7: Xe buýt được phép lưu thông
+dgm8: Lối ra 
+dgm9: Đi chậm

@@ -1,0 +1,10 @@
+
+train: /mnt/data2/POI_VN/Data_POI_VN/train
+val: /mnt/data2/POI_VN/Data_POI_VN/val
+test: /mnt/data2/POI_VN/Data_POI_VN/test
+
+# number of classes
+nc: 3
+
+# class names
+names: ['PA','POI','SN']

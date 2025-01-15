@@ -1,0 +1,14 @@
+# Predict settings -----------------------------------------------------------------------------------------------------
+agnostic_nms: True # (bool) loại bỏ các box chồng lớp
+classes: [0,1] # (int | list[int], optional) id class 
+conf: 0.3 # conf score
+iou: 0.3
+imgsz: 1088
+
+# Visualize settings ---------------------------------------------------------------------------------------------------
+save: True # (bool) cho phép lưu các result bên dưới
+save_crop: True # (bool) lưu cropped images
+show_labels: True # (bool) show prediction labels, i.e. 'person'
+show_conf: True # (bool) show prediction confidence, i.e. '0.99'
+show_boxes: True # (bool) show prediction boxes
+line_width: 2 # (int, optional) line width of the bounding boxes. Scaled to image size if None.

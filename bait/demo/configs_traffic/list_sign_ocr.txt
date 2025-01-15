@@ -1,0 +1,44 @@
+106b	Cấm xe tải trên x tấn
+115	Hạn chế x trọng lượng xe
+116	Hạn chế trọng lượng x trên trục xe
+117	Hạn chế x chiều cao
+120	Hạn chế x chiều dài ô tô kéo mooc
+121	Cự ly x tối thiểu giữa 2 xe
+127	Tốc độ tối đa x cho phép
+134	Hết hạn chế tốc độ x tối đa
+219	Dốc xuống nguy hiểm
+220	Dốc lên nguy hiểm
+239b	Chiều cao tĩnh không thực tế
+306	Tốc độ x tối thiểu cho phép
+414a	Chỉ hướng đường
+414b	Chỉ hướng đường
+417	Hướng đường phải đi cho từng loại xe
+419a	Chỉ dẫn địa giới
+439	Tên cầu
+447a	Biển báo cầu vượt liên thông
+447b	Biển báo cầu vượt liên thông
+451b	Lỗi vào đường cao tốc
+452	Chiỉ dẫn bắt đầu đường cao tốc
+453a	Kết thúc đường cao tốc
+453b	Kết thúc đường cao tốc
+454	Khoảng cách đến lỗi ra phía trước
+455	Khoảng cách đến lối ra tiếp theo
+459a	Khu tham quan du lịch
+464a	Lối ra một chiều
+465	Địa điểm và khoảng cách
+466	Chỉ dẫn sơ đồ lỗi ra một chiều
+468b	Chướng ngại vật phía trước
+470	Số điện thoại khẩn cấp
+472a	Trạm thu phí
+472b	Trạm thu phí
+501	Phạm vi tác dụng của biển
+502	Khoảng cách đến các đối tượng báo hiệu
+505b	Loại xe hạn chế qua cầu
+508b	Biển thị thời gian
+509a	Thuyết minh biển chính
+dgm4	Chỉ dẫn ETC trạm thu phí
+dgm5	Chỉ dẫn nút giao
+dgm6	Giới hạn tốc độ tối đa theo làn trên đường cao tốc
+414c	Chỉ hướng đường
+414d	Chỉ hướng đường
+428	Trạm xăng

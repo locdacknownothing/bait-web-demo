@@ -1,0 +1,10 @@
+.vscode 
+.venv/ 
+__pycache__/ 
+
+data*/ 
+test*/ 
+
+*.pt 
+*.pth 
+*.zip 
